@@ -2,8 +2,18 @@
 layout: archive
 ---
 
-{{ content }}
-
-<div class="entries-{{ page.entries_layout }}">
-  {% include posts-category.html taxonomy=page.taxonomy type=page.entries_layout %}
-</div>
+<ul class="posts-list" style="list-style:none;">
+  
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
+    <li style="background: #e8cd99; padding: 20px 12px; border-radius: 14px; color: #737373;" class="doclist">
+      <h3 style="margin:0;">
+        <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration:none">
+          {{ post.title }}
+        </a>
+        <small>{{ post.date | date_to_string }}</small>
+      </h3>
+    </li>
+  {% endfor %}
+  
+</ul>
