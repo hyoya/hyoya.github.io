@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko" #타겟국가 설정
-title                    : "🌺DevHyo"
+title                    : "DevHyo"
 title_separator          : "DevHyoya"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyoya"
