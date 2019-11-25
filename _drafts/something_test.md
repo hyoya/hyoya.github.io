@@ -3,6 +3,7 @@ title: draft page
 comment: true
 categories: howto
 tags: newtag
+parmalink : /sometest/
 ---
 
 # Something test!

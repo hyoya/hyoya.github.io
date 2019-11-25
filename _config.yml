@@ -119,9 +119,13 @@ author:
     - label: "Introduction"
       icon: "fas fa-cookie"
       url: /category/introduction/
-    - label: "HowToSetEnv"
-      icon: "fas fa-tools"
+    - label: "DDD"
+      icon: "fas fa-cookie-bite"
+      url: /category/DDD/
+    - label: "HowTo"
+      icon: "fas fa-dolly-flatbed"
       url: /category/howto/
+
 
 
 # Site Footer
