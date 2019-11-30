@@ -6,20 +6,21 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16 !default;
+$doc-font-size: 5 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
-$indent-var: 1.3em !default;
+$indent-var: 0.65em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$nabapen: "nabapen";
 
 /* sans serif typefaces */
-$sans-serif-narrow: $sans-serif !default;
+$sans-serif-narrow: $nabapen !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
 /* serif typefaces */
@@ -29,8 +30,8 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
+$global-font-family: $nabapen !default;
+$header-font-family: $nabapen !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
@@ -42,7 +43,6 @@ $type-size-5: 1em !default; // ~16px
 $type-size-6: 0.75em !default; // ~12px
 $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
-
 /*
    Colors
    ========================================================================== */

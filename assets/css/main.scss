@@ -4,5 +4,11 @@
 
 @charset "utf-8";
 
+/*=====*/
+@font-face {
+	  font-family: "NaBaPen";
+		  src: url( '../fonts/NanumBarunGothic.ttf') format( 'truetype');
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
