@@ -6,7 +6,7 @@ tags: [CS, float, Binary]
 ---
 
 
-
+## 작성중
 
 
 > 오늘 유튭을 보는데 흥미로운걸 발견했다.
@@ -18,9 +18,9 @@ tags: [CS, float, Binary]
 
 먼저 현상을 직접 눈으로 확인해보자
 
-![img](../../assets/postImg/DDD/20191223computerfloatbinary02.png)
+![img](../../assets/postImg/DDD/20191223computerfloatbinary02.PNG)
 
-![img](../../assets/postImg/DDD/20191223computerfloatbinary01.png)
+![img](../../assets/postImg/DDD/20191223computerfloatbinary01.PNG)
 
 
 
@@ -34,6 +34,6 @@ tags: [CS, float, Binary]
 
 1. 컴퓨터에서 데이터를 저장하는 방법
 2. 컴퓨터에서 실수형 데이터를 저장하는 방법
-
 3. 단일정밀도
+
 
