@@ -5,6 +5,13 @@
 	color: #737373;
 	&:hover {background: #e8cd99;}
 }
+.doclist > h2{
+	margin : 10px 0px;
+}
+
+a.doclist{
+	text-decoration: none;
+}
 
 div#toc {
     padding: 10px;
