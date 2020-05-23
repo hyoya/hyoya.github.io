@@ -1,0 +1,27 @@
+.doclist{
+	background: #f1e6d0;
+	padding: 20px 12px;
+	border-radius: 14px;
+	color: #737373;
+	&:hover {background: #e8cd99;}
+}
+
+div#toc {
+    padding: 10px;
+    display: inline-block !important;
+    text-decoration: none;
+}
+
+.toclist a{
+	text-decoration: none;
+		&:hover {background: #e8cd99;}
+}	
+
+.tocitem a{
+	text-decoration: none;
+		&:hover {background: #e8cd99;}
+}
+
+ol.toclist{
+	padding-left:10px !important;
+}

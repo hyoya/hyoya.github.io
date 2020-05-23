@@ -16,8 +16,8 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko" #타겟국가 설정
-title                    : "비가 내리면 좋겠다"
-title_separator          : "DevHyoya"
+title                    : "서랍장"
+title_separator          : "노트"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyoya"
 description              : "Digging Deep Down"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : dev-hyoya # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : hyoya # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
