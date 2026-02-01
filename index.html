@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>조현♥서효정 결혼합니다</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="section-inner">
+
+<audio id="bgm" loop>
+  <source src="assets/bgm.mp4" type="audio/mp4">
+</audio>
+
+
+  <!-- 메인 -->
+  <section class="hero">
+    <p class="subtitle">결혼합니다</p>
+    <h1 class="title">조 현 <img src="assets/images/heart.png" alt="♥" class="heart-icon"> 서효정</h1>
+    <p class="date">2026년 6월 13일 토요일 PM 14:00<br/>더청담</p>
+    <div class="scroll-indicator">
+      <img src="assets/images/scroll_down.png" alt="아래로 스크롤">
+    </div>
+  </section>
+
+
+  <!-- 인사말 -->
+  <section class="section">
+    <h2>초대합니다</h2>
+    <p class="text">
+      평생을 같이하고 싶은 사람을 만났습니다.<br />
+서로 아껴주고 이해하며<br />
+사랑을 베풀며 살고 싶습니다.<br /><br />
+
+힘찬 첫 걸음이 될 수 있도록<br />
+함께 자리하여 축복해 주시면 감사하겠습니다.
+    </p>
+  </section>
+
+  <!-- 혼주 연락 -->
+<section class="section contact-box">
+    <div class="contact-guide">
+    <div class="contact-line">
+      <span class="name">조규진 · 고경란 <span class="order">장남</span></span>
+      <span class="relation">조 현</span>
+      <span class="contact-icon-box">
+      <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      </span>
+    </div>
+    <div class="contact-line">
+      <span class="name">서유성 · 백선화 <span class="order">장녀</span></span>
+      <span class="relation">서효정</span>
+      <span class="contact-icon-box">
+      <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      </span>
+    </div>
+  </div>
+  <button class="contact-btn" id="openContact">
+    혼주에게 연락하기
+  </button>
+</section>
+
+<!-- 팝업 -->
+<div class="modal hidden" id="contactModal">
+<div class="modal-content">
+  <button class="close-btn" id="closeContact">×</button>
+
+  <!-- 신랑측 -->
+  <p class="contact-section-title">신랑측 혼주</p>
+  <ul class="contact-list">
+    <li>
+      <span>조규진</span>
+      <div class="actions">
+        <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      </div>
+    </li>
+    <li>
+      <span>고경란</span>
+      <div class="actions">
+        <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- 신부측 -->
+  <p class="contact-section-title">신부측 혼주</p>
+  <ul class="contact-list">
+    <li>
+      <span>서유성</span>
+      <div class="actions">
+        <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      </div>
+    </li>
+    <li>
+      <span>백선화</span>
+      <div class="actions">
+        <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<section class="section">
+  <h2>예식 일정</h2>
+
+  <div class="calendar">
+    <div class="calendar-header">
+      2026년 6월
+    </div>
+
+    <div class="calendar-grid">
+      <span class="sunday">일</span><span>월</span><span>화</span>
+      <span>수</span><span>목</span><span>금</span><span>토</span>
+
+      <!-- 2026년 6월 1일은 월요일 -->
+      <span></span>
+      <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+      <span class="sunday">7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span class="wedding-day">13</span>
+
+      <span class="sunday">14</span><span>15</span><span>16</span><span>17</span>
+      <span>18</span><span>19</span><span>20</span>
+      <span class="sunday">21</span><span>22</span><span>23</span><span>24</span>
+      <span>25</span><span>26</span><span>27</span>
+      <span class="sunday">28</span><span>29</span><span>30</span>
+    </div>
+  </div>
+    <div class="countdown">
+  <p class="countdown-label" id="dDayNote">결혼식까지</p>
+  <p class="countdown-day" id="dDay">D-000</p>
+</div>
+</section>
+
+
+  <!-- 사진 -->
+<section class="section">
+  <h2>우리의 순간</h2>
+
+  <div class="gallery">
+    <!-- 예시: 21장 -->
+    <img src="assets/gallery/1.jpg" class="photo" />
+    <img src="assets/gallery/2.jpg" class="photo" />
+    <img src="assets/gallery/3.jpg" class="photo" />
+    <img src="assets/gallery/4.jpg" class="photo" />
+    <img src="assets/gallery/5.jpg" class="photo" />
+  </div>
+</section>
+
+<div id="galleryModal" class="modal hidden">
+  <div class="gallery-modal-content">
+
+      <button class="close-gallery-btn" id="closeGallery" aria-label="닫기">
+  <svg viewBox="0 0 24 24" width="20" height="20">
+    <path d="M18 6L6 18M6 6l12 12"
+      fill="none" 
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"/>
+  </svg>
+</button>
+
+    <img id="modalImage" />
+  </div>
+</div>
+
+
+
+  <section class="section">
+  <h2>오시는 길</h2>
+
+  <div class="map-box">
+    <!-- 지도 썸네일 -->
+    <a
+      href="https://naver.me/xk1nUsjb"
+      target="_blank"
+      class="map-thumbnail"
+    >
+      <img src="assets/images/약도.png" alt="더청담 약도" />
+    </a>
+
+    <!-- 장소 정보 -->
+    <p class="hall-name">더청담</p>
+    <p class="hall-address">
+      서울 강남구 도산대로 434<br />
+      (강남구 청담동 4)
+    </p>
+
+    <!-- 길안내 버튼 -->
+    <div class="map-buttons">
+      <a
+        href="https://naver.me/xk1nUsjb"
+        target="_blank">
+        네이버지도
+      </a>
+      <a
+        href="https://place.map.kakao.com/11412002"
+        target="_blank">
+        카카오맵
+      </a>
+    </div>
+
+    <!-- 교통 안내 -->
+<section class="location">
+  <div class="transport-info">
+    <div class="transport-item">
+      <h3>셔틀버스</h3>
+      <p>강남역 4번 출구 앞</p>
+      <p>* 5~10분 간격 출발</p>
+    </div>
+
+    <div class="transport-item">
+      <h3>버스</h3>
+      <p>차병원 차움 : 4212</p>
+      <p>농협 앞 : 343, 4212</p>
+      <p>ST송은빌딩 : 9407, 9507, 9607</p>
+    </div>
+
+    <div class="transport-item">
+      <h3>승용차</h3>
+      <p>건물 내부 만차 시</p>
+      <p>외부 주차장 무료 발렛파킹</p>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <h2>축하의 마음 전하실곳</h2>
+  <button class="contact-btn" id="openAccount">
+    마음 전하기
+  </button>
+  <p class="sub-text">멀리서도 따뜻한 축하에 진심으로 감사드립니다.</p>
+</section>
+
+<div id="accountModal" class="modal hidden">
+  <div class="modal-content">
+
+  <button class="close-btn" id="closeAccount" aria-label="닫기">
+  <svg viewBox="0 0 24 24" width="20" height="20">
+    <path d="M18 6L6 18M6 6l12 12"
+      fill="none" 
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"/>
+  </svg>
+</button>
+
+    <!-- STEP 1: 선택 화면 -->
+    <div id="accountSelect" class="account-step active">
+      <h3 class="modal-title">마음 전하실 곳</h3>
+
+      <div class="select-buttons">
+        <button class="select-btn" data-target="groom">
+          <img src="assets/images/groom.png" alt="">
+          <p><span>신랑</span></p>
+        </button>
+
+        <button class="select-btn" data-target="bride">
+          <img src="assets/images/bride.png" alt="">
+          <p><span>신부</span></p>
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 2: 신랑 -->
+    <div id="groom" class="account-step">
+      <h3 class="modal-title">신랑</h3>
+
+      <div class="account-item">
+        <div class="account-info">
+          <div class="account-main">
+            <span class="bank">국민은행</span>,
+            <span class="number">123-456-789012</span>
+          </div>
+          <div class="account-name">홍길동</div>
+        </div>
+        <button class="copy-btn"
+          onclick="copyAccount('국민은행 123-456-789012')">
+          복사
+        </button>
+      </div>
+      <div class="account-item">
+        <div class="account-info">
+          <div class="account-main">
+            <span class="bank">국민은행</span>,
+            <span class="number">123-456-789012</span>
+          </div>
+          <div class="account-name">홍길동</div>
+        </div>
+        <button class="copy-btn"
+          onclick="copyAccount('국민은행 123-456-789012')">
+          복사
+        </button>
+      </div>
+      <div class="account-item">
+        <div class="account-info">
+          <div class="account-main">
+            <span class="bank">국민은행</span>,
+            <span class="number">123-456-789012</span>
+          </div>
+          <div class="account-name">홍길동</div>
+        </div>
+        <button class="copy-btn"
+          onclick="copyAccount('국민은행 123-456-789012')">
+          복사
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 2: 신부 -->
+    <div id="bride" class="account-step">
+
+      <h3 class="modal-title">신부</h3>
+      <!-- 동일 구조 -->
+      <div class="account-item">
+        <div class="account-info">
+          <div class="account-main">
+            <span class="bank">국민은행</span>,
+            <span class="number">123-456-789012</span>
+          </div>
+          <div class="account-name">홍길동</div>
+        </div>
+        <button class="copy-btn"
+          onclick="copyAccount('국민은행 123-456-789012')">
+          복사
+        </button>
+      </div>
+      <div class="account-item">
+        <div class="account-info">
+          <div class="account-main">
+            <span class="bank">국민은행</span>,
+            <span class="number">123-456-789012</span>
+          </div>
+          <div class="account-name">홍길동</div>
+        </div>
+        <button class="copy-btn"
+          onclick="copyAccount('국민은행 123-456-789012')">
+          복사
+        </button>
+      </div>
+      <div class="account-item">
+        <div class="account-info">
+          <div class="account-main">
+            <span class="bank">국민은행</span>,
+            <span class="number">123-456-789012</span>
+          </div>
+          <div class="account-name">홍길동</div>
+        </div>
+        <button class="copy-btn"
+          onclick="copyAccount('국민은행 123-456-789012')">
+          복사
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section>
+<footer class="site-footer">
+  <button id="copySiteUrl" class="copy-site-btn">
+    <img src="assets/images/link.png" alt="♥" class="icon"> 청첩장 링크 복사
+  </button>
+</footer>
+</section>
+
+  <!-- 감사 인사 -->
+  <section class="section thanks">
+    <p class="text">
+      바쁘신 와중에도 함께해주셔서<br />
+      진심으로 감사합니다.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+
+</div>
+</body>
+</html>
