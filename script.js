@@ -125,19 +125,26 @@ const galleryCloseBtn = document.getElementById('closeGallery');
 
 let currentIndex = 0;
 
-// 열기
+// 모달 열기
 photos.forEach((photo, index) => {
   photo.addEventListener('click', () => {
     currentIndex = index;
     modalImage.src = photo.src;
     galleryModal.classList.remove('hidden');
+
+    // 배경 스크롤 잠금
+    document.body.style.overflow = 'hidden';
   });
 });
 
-// 닫기
+// 모달 닫기
 galleryCloseBtn.addEventListener('click', () => {
   galleryModal.classList.add('hidden');
+
+  // 스크롤 복원
+  document.body.style.overflow = '';
 });
+
 
 
 
@@ -166,6 +173,22 @@ modalImage.addEventListener('touchend', (e) => {
 
 
 
+modalImage.addEventListener('gesturestart', (e) => {
+  e.preventDefault();
+});
+
+modalImage.addEventListener('gesturechange', (e) => {
+  e.preventDefault();
+});
+
+modalImage.addEventListener('gestureend', (e) => {
+  e.preventDefault();
+});
+
+
+//-------------
+
+
 // hero v hidden
 const scrollIndicator = document.querySelector('.scroll-indicator');
 
@@ -189,3 +212,46 @@ function playBgmOnce() {
 
 document.addEventListener('click', playBgmOnce);
 document.addEventListener('touchstart', playBgmOnce);
+
+
+
+
+/* --Account-- */
+
+const copyAccountGroomDad = document.getElementById('copyAccountGroomDad');
+const copyAccountGroomMom = document.getElementById('copyAccountGroomMom');
+const copyAccountGroom = document.getElementById('copyAccountGroom');
+const copyAccountBrideDad = document.getElementById('copyAccountBrideDad');
+const copyAccountBrideMom = document.getElementById('copyAccountBrideMom');
+const copyAccountBride = document.getElementById('copyAccountBride');
+
+function copyToClipboard(text) {
+  const isMobile = window.innerWidth <= 768;
+   navigator.clipboard.writeText(text).then(() => {
+    if (!isMobile) {
+      alert('복사되었습니다.');
+    }
+    // 모바일은 toast로 안내
+  }).catch(err => {
+    console.error('복사 실패', err);
+  });
+}
+
+copyAccountGroomDad.addEventListener('click', () => {
+  copyToClipboard('000-0000-0000 000');
+});
+copyAccountGroomMom.addEventListener('click', () => {
+  copyToClipboard('000-0000-0000 000');
+});
+copyAccountGroom.addEventListener('click', () => {
+  copyToClipboard('000-0000-0000 000');
+});
+copyAccountBrideDad.addEventListener('click', () => {
+  copyToClipboard('000-0000-0000 000');
+});
+copyAccountBrideMom.addEventListener('click', () => {
+  copyToClipboard('000-0000-0000 000');
+});
+copyAccountBride.addEventListener('click', () => {
+  copyToClipboard('000-0000-0000 000');
+});

@@ -135,7 +135,16 @@ h2 {
 
 /*----------------*/
 
+.logo {
+  width: 140px;
+  height: auto;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+/*----------------*/
 /* 갤러리 */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -151,27 +160,38 @@ h2 {
 }
 
 .gallery-modal-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: #000;
+  background-color: #ffffff; /* 하얀색 */
+  padding:60px 8px 60px 8px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+.gallery-modal-content img {
+  touch-action: pan-y; /* 수직 스크롤만 허용, 확대/축소 방지 */
+  user-select: none;   /* 텍스트 선택 방지 */
+  -webkit-user-drag: none; /* 이미지 드래그 방지 iOS */
+  -ms-touch-action: pan-y;
+}
+
+
 #modalImage {
-  max-width: 92%;
-  max-height: 88%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
 .close-gallery-btn{
   position: absolute;
-  top: 12px;
+  top: 0px;
   right: 12px;
-  font-size: 24px;
-  color: #fff;
+  font-size: 44px;
+  color: #000;
   background: none;
   border: none;
 }
@@ -237,7 +257,7 @@ h2 {
   top: 12px;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 44px;
 }
 
 /* 리스트 */
@@ -278,7 +298,6 @@ h2 {
   margin-top: 24px;
 
   border-radius: 12px;
-  background: #ffffff;
   padding: 20px 12px 20px 12px;
 }
 
@@ -315,11 +334,16 @@ h2 {
 }
 
 .wedding-day {
-  background: #333;
-  color: #fff !important;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('assets/images/heart_2.png') no-repeat center center;
+  background-size: contain;
+  color: #fff; /* 숫자 보이게 할 경우 */
+  border-radius: 50%; /* 원형 유지 */
   font-weight: 600;
 }
+
 
 .calendar-note {
   margin-top: 12px;
@@ -585,7 +609,6 @@ h2 {
   left: 0;
   right: 0;
   top: 50%;
-  border-bottom: 1px dotted #aaa;
   z-index: 0;
 }
 

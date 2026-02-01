@@ -29,6 +29,7 @@
 
   <!-- 인사말 -->
   <section class="section">
+    <img src="assets/logo.png" alt="♥" class="logo"> 
     <h2>초대합니다</h2>
     <p class="text">
       평생을 같이하고 싶은 사람을 만났습니다.<br />
@@ -44,19 +45,24 @@
 <section class="section contact-box">
     <div class="contact-guide">
     <div class="contact-line">
-      <span class="name">조규진 · 고경란 <span class="order">장남</span></span>
+      <span class="name">조규진 · 고경란 </span>
+      <span class="order">장남</span>
       <span class="relation">조 현</span>
+      <img src="assets/images/3dots.png" alt="♥" class="icon">
       <span class="contact-icon-box">
-      <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
-        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      <a href="tel:01041418578"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01041418578"><img src="assets/images/message.png" alt="♥" class="icon"></a>
       </span>
     </div>
     <div class="contact-line">
-      <span class="name">서유성 · 백선화 <span class="order">장녀</span></span>
+      <span class="name">서유성 · 백선화 </span>
+      <span class="order">장녀</span>
       <span class="relation">서효정</span>
+
+      <img src="assets/images/3dots.png" alt="♥" class="icon">
       <span class="contact-icon-box">
-      <a href="tel:01012345678"><img src="assets/images/call.png" alt="♥" class="icon"></a>
-        <a href="sms:01012345678"><img src="assets/images/message.png" alt="♥" class="icon"></a>
+      <a href="tel:01036627176"><img src="assets/images/call.png" alt="♥" class="icon"></a>
+        <a href="sms:01036627176"><img src="assets/images/message.png" alt="♥" class="icon"></a>
       </span>
     </div>
   </div>
@@ -68,7 +74,13 @@
 <!-- 팝업 -->
 <div class="modal hidden" id="contactModal">
 <div class="modal-content">
-  <button class="close-btn" id="closeContact">×</button>
+  <button class="close-btn" id="closeContact"><svg viewBox="0 0 24 24" width="20" height="20">
+    <path d="M18 6L6 18M6 6l12 12"
+      fill="none" 
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"/>
+  </svg></button>
 
   <!-- 신랑측 -->
   <p class="contact-section-title">신랑측 혼주</p>
@@ -115,7 +127,7 @@
 
   <div class="calendar">
     <div class="calendar-header">
-      2026년 6월
+      6월
     </div>
 
     <div class="calendar-grid">
@@ -159,18 +171,16 @@
 
 <div id="galleryModal" class="modal hidden">
   <div class="gallery-modal-content">
-
       <button class="close-gallery-btn" id="closeGallery" aria-label="닫기">
-  <svg viewBox="0 0 24 24" width="20" height="20">
-    <path d="M18 6L6 18M6 6l12 12"
-      fill="none" 
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"/>
-  </svg>
-</button>
-
-    <img id="modalImage" />
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path d="M18 6L6 18M6 6l12 12"
+          fill="none" 
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img id="modalImage" />
   </div>
 </div>
 
@@ -283,41 +293,32 @@
       <div class="account-item">
         <div class="account-info">
           <div class="account-main">
-            <span class="bank">국민은행</span>,
-            <span class="number">123-456-789012</span>
+            <span class="bank">00은행</span>,
+            <span class="number">000-000-000000</span>
           </div>
           <div class="account-name">홍길동</div>
         </div>
-        <button class="copy-btn"
-          onclick="copyAccount('국민은행 123-456-789012')">
-          복사
-        </button>
+        <button class="copy-btn" id="copyAccountGroomDad">복사</button>
       </div>
       <div class="account-item">
         <div class="account-info">
           <div class="account-main">
-            <span class="bank">국민은행</span>,
-            <span class="number">123-456-789012</span>
+            <span class="bank">00은행</span>,
+            <span class="number">000-000-000000</span>
           </div>
           <div class="account-name">홍길동</div>
         </div>
-        <button class="copy-btn"
-          onclick="copyAccount('국민은행 123-456-789012')">
-          복사
-        </button>
+        <button class="copy-btn" id="copyAccountGroomMom">복사</button>
       </div>
       <div class="account-item">
         <div class="account-info">
           <div class="account-main">
-            <span class="bank">국민은행</span>,
-            <span class="number">123-456-789012</span>
+            <span class="bank">00은행</span>,
+            <span class="number">000-000-000000</span>
           </div>
           <div class="account-name">홍길동</div>
         </div>
-        <button class="copy-btn"
-          onclick="copyAccount('국민은행 123-456-789012')">
-          복사
-        </button>
+        <button class="copy-btn" id="copyAccountGroom">복사</button>
       </div>
     </div>
 
@@ -329,41 +330,32 @@
       <div class="account-item">
         <div class="account-info">
           <div class="account-main">
-            <span class="bank">국민은행</span>,
-            <span class="number">123-456-789012</span>
+            <span class="bank">00은행</span>,
+            <span class="number">000-000-000000</span>
           </div>
           <div class="account-name">홍길동</div>
         </div>
-        <button class="copy-btn"
-          onclick="copyAccount('국민은행 123-456-789012')">
-          복사
-        </button>
+        <button class="copy-btn" id="copyAccountBrideDad">복사</button>
       </div>
       <div class="account-item">
         <div class="account-info">
           <div class="account-main">
-            <span class="bank">국민은행</span>,
-            <span class="number">123-456-789012</span>
+            <span class="bank">00은행</span>,
+            <span class="number">000-000-000000</span>
           </div>
           <div class="account-name">홍길동</div>
         </div>
-        <button class="copy-btn"
-          onclick="copyAccount('국민은행 123-456-789012')">
-          복사
-        </button>
+        <button class="copy-btn" id="copyAccountBrideMom">복사</button>
       </div>
       <div class="account-item">
         <div class="account-info">
           <div class="account-main">
-            <span class="bank">국민은행</span>,
-            <span class="number">123-456-789012</span>
+            <span class="bank">00은행</span>,
+            <span class="number">000-000-000000</span>
           </div>
           <div class="account-name">홍길동</div>
         </div>
-        <button class="copy-btn"
-          onclick="copyAccount('국민은행 123-456-789012')">
-          복사
-        </button>
+        <button class="copy-btn" id="copyAccountBride">복사</button>
       </div>
     </div>
 
