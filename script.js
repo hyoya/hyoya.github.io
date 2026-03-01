@@ -129,7 +129,7 @@ let currentIndex = 0;
 photos.forEach((photo, index) => {
   photo.addEventListener('click', () => {
     currentIndex = index;
-    modalImage.src = photo.src;
+    modalImage.src = photo.dataset.original;
     galleryModal.classList.remove('hidden');
 
     // 배경 스크롤 잠금
@@ -144,6 +144,14 @@ galleryCloseBtn.addEventListener('click', () => {
   // 스크롤 복원
   document.body.style.overflow = '';
 });
+
+// 바깥 영역 클릭 시 닫기
+galleryModal.addEventListener('click', (e) => {
+  if (e.target === galleryModal) {
+    galleryModal.classList.add('hidden');
+  }
+});
+
 
 
 
@@ -237,21 +245,21 @@ function copyToClipboard(text) {
   });
 }
 
-copyAccountGroomDad.addEventListener('click', () => {
-  copyToClipboard('000-0000-0000 000');
-});
-copyAccountGroomMom.addEventListener('click', () => {
-  copyToClipboard('000-0000-0000 000');
-});
-copyAccountGroom.addEventListener('click', () => {
-  copyToClipboard('000-0000-0000 000');
-});
-copyAccountBrideDad.addEventListener('click', () => {
-  copyToClipboard('000-0000-0000 000');
-});
-copyAccountBrideMom.addEventListener('click', () => {
-  copyToClipboard('000-0000-0000 000');
-});
-copyAccountBride.addEventListener('click', () => {
-  copyToClipboard('000-0000-0000 000');
-});
+// copyAccountGroomDad.addEventListener('click', () => {
+//   copyToClipboard('000-0000-0000 000');
+// });
+// copyAccountGroomMom.addEventListener('click', () => {
+//   copyToClipboard('000-0000-0000 000');
+// });
+// copyAccountGroom.addEventListener('click', () => {
+//   copyToClipboard('000-0000-0000 000');
+// });
+// copyAccountBrideDad.addEventListener('click', () => {
+//   copyToClipboard('000-0000-0000 000');
+// });
+// copyAccountBrideMom.addEventListener('click', () => {
+//   copyToClipboard('000-0000-0000 000');
+// });
+// copyAccountBride.addEventListener('click', () => {
+//   copyToClipboard('000-0000-0000 000');
+// });
