@@ -150,6 +150,8 @@ galleryModal.addEventListener('click', (e) => {
   if (e.target === galleryModal) {
     galleryModal.classList.add('hidden');
   }
+  // 스크롤 복원
+  document.body.style.overflow = '';
 });
 
 
