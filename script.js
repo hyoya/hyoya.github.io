@@ -245,7 +245,7 @@ musicBtn.addEventListener("click", function(){
         player.playVideo();
         musicIcon.src = "assets/images/play.png";
         isPlaying = true;
-    }else{
+    } else{
         player.pauseVideo();
         musicIcon.src = "assets/images/pause.png";
         isPlaying = false;
