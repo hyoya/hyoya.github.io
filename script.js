@@ -98,11 +98,14 @@ function resetAccountModal() {
 const copySiteBtn = document.getElementById('copySiteUrl');
 
 copySiteBtn.addEventListener('click', () => {
-  const url = window.location.href;
+  const url = "https://m.site.naver.com/21SlQ";
+  const isMobile = window.innerWidth <= 768;
 
   if (navigator.clipboard) {
     navigator.clipboard.writeText(url).then(() => {
-      alert('청첩장 주소가 복사되었습니다.');
+      if (!isMobile){
+        alert('청첩장 주소가 복사되었습니다.');
+      }
     });
   } else {
     // 구형 브라우저 fall
@@ -113,7 +116,9 @@ copySiteBtn.addEventListener('click', () => {
     tempInput.select();
     document.execCommand('copy');
     document.body.removeChild(tempInput);
-    alert('청첩장 주소가 복사되었습니다.');
+    if (!isMobile){
+      alert('청첩장 주소가 복사되었습니다.');
+    }
   }
 });
 

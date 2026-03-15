@@ -44,8 +44,9 @@ h2 {
 }
 
 .text {
-  font-size: 15px;
   color: #555;
+  word-break: keep-all;
+  font-size: clamp(13px, 3.8vw, 15px);
 }
 
 /* 메인 히어로 */
@@ -646,6 +647,7 @@ h2 {
   background: #FFF8F6; /* 배경색이 body와 같아야 도트 가려짐 */
   padding: 0 4px;
   z-index: 1;
+   word-break: keep-all;
 }
 
 .order {
