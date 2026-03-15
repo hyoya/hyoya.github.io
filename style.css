@@ -608,8 +608,6 @@ h2 {
 }
 
 
-
-
 .contact-box {
   border-radius: 12px;
   font-weight: 600;
@@ -658,4 +656,33 @@ h2 {
 
 .contact-icon-box a{
   margin-left: 10px;
+}
+
+
+
+/* BGM */
+#music-btn{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#music-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+#youtube-player{
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
