@@ -253,18 +253,17 @@ musicBtn.addEventListener("click", function(){
 
 });
 
-document.addEventListener("touchstart", function(e){
-if(e.target.closest("#music-btn")) return;
-    if(player && !isPlaying){
-        player.playVideo();
-        musicIcon.src = "assets/images/play.png";
-        isPlaying = true;
-    }
-},{once:true});
+// document.addEventListener("touchstart", function(e){
+//   if (e.target.closest("#music-btn")) return;
+//   if(player && !isPlaying){
+//       player.playVideo();
+//       musicIcon.src = "assets/images/play.png";
+//       isPlaying = true;
+//   }
+// },{once:true});
 
 
 onYouTubeIframeAPIReady()
-
 
 
 /* --Account-- */
@@ -281,6 +280,8 @@ function copyToClipboard(text) {
    navigator.clipboard.writeText(text).then(() => {
     if (!isMobile) {
       alert('복사되었습니다.');
+    }else{
+      console.log("복사되었습니다 : " + text)
     }
     // 모바일은 toast로 안내
   }).catch(err => {
