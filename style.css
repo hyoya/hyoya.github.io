@@ -561,14 +561,14 @@ h2 {
 }
 
 .account-main {
-  font-size: 14px;
-  white-space: normal;
-}
-
-.account-name {
   font-size: 12px;
   color: #777;
   margin-top: 4px;
+}
+
+.account-name {
+  font-size: 14px;
+  white-space: normal;
 }
 
 .copy-btn {

@@ -105,7 +105,8 @@ copySiteBtn.addEventListener('click', () => {
       alert('청첩장 주소가 복사되었습니다.');
     });
   } else {
-    // 구형 브라우저 fallback
+    // 구형 브라우저 fall
+    ck
     const tempInput = document.createElement('input');
     tempInput.value = url;
     document.body.appendChild(tempInput);
@@ -247,21 +248,21 @@ function copyToClipboard(text) {
   });
 }
 
-// copyAccountGroomDad.addEventListener('click', () => {
-//   copyToClipboard('000-0000-0000 000');
-// });
-// copyAccountGroomMom.addEventListener('click', () => {
-//   copyToClipboard('000-0000-0000 000');
-// });
-// copyAccountGroom.addEventListener('click', () => {
-//   copyToClipboard('000-0000-0000 000');
-// });
-// copyAccountBrideDad.addEventListener('click', () => {
-//   copyToClipboard('000-0000-0000 000');
-// });
-// copyAccountBrideMom.addEventListener('click', () => {
-//   copyToClipboard('000-0000-0000 000');
-// });
-// copyAccountBride.addEventListener('click', () => {
-//   copyToClipboard('000-0000-0000 000');
-// });
+copyAccountGroomDad.addEventListener('click', () => {
+  copyToClipboard('하나은행 06518297374');
+});
+copyAccountGroomMom.addEventListener('click', () => {
+  copyToClipboard('농협 3561046612543');
+});
+copyAccountGroom.addEventListener('click', () => {
+  copyToClipboard('우리 1002258978968');
+});
+copyAccountBrideDad.addEventListener('click', () => {
+  copyToClipboard('KB국민 10300104051892');
+});
+copyAccountBrideMom.addEventListener('click', () => {
+  copyToClipboard('카카오뱅크3333036157215');
+});
+copyAccountBride.addEventListener('click', () => {
+  copyToClipboard('농협 3020969878701');
+});
