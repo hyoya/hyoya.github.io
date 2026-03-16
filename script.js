@@ -217,55 +217,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* BGM */
-let player;
-let isPlaying = false;
-const videoId = "Z3bKEtU8MQ0";
-
-const musicBtn = document.getElementById("music-btn");
-const musicIcon = document.getElementById("music-icon");
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtube-player', {
-        height: '0',
-        width: '0',
-        videoId: videoId,
-        playerVars: {
-            autoplay: 0,
-            loop: 1,
-            playlist: videoId
-        }
-    });
-}
-
-musicBtn.addEventListener("click", function(){
-    if (!player) return;
-
-    if (!isPlaying){
-        player.playVideo();
-        musicIcon.src = "assets/images/play.png";
-        isPlaying = true;
-    } else{
-        player.pauseVideo();
-        musicIcon.src = "assets/images/pause.png";
-        isPlaying = false;
-    }
-
-});
-
-// document.addEventListener("touchstart", function(e){
-//   if (e.target.closest("#music-btn")) return;
-//   if(player && !isPlaying){
-//       player.playVideo();
-//       musicIcon.src = "assets/images/play.png";
-//       isPlaying = true;
-//   }
-// },{once:true});
-
-
-onYouTubeIframeAPIReady()
-
-
 /* --Account-- */
 
 const copyAccountGroomDad = document.getElementById('copyAccountGroomDad');
@@ -307,3 +258,53 @@ copyAccountBrideMom.addEventListener('click', () => {
 copyAccountBride.addEventListener('click', () => {
   copyToClipboard('농협 3020969878701');
 });
+
+
+
+/* BGM */
+// let player;
+// let isPlaying = false;
+// const videoId = "Z3bKEtU8MQ0";
+
+// const musicBtn = document.getElementById("music-btn");
+// const musicIcon = document.getElementById("music-icon");
+
+// function onYouTubeIframeAPIReady() {
+//     player = new YT.Player('youtube-player', {
+//         height: '0',
+//         width: '0',
+//         videoId: videoId,
+//         playerVars: {
+//             autoplay: 0,
+//             loop: 1,
+//             playlist: videoId
+//         }
+//     });
+// }
+
+// musicBtn.addEventListener("click", function(){
+//     if (!player) return;
+
+//     if (!isPlaying){
+//         player.playVideo();
+//         musicIcon.src = "assets/images/play.png";
+//         isPlaying = true;
+//     } else{
+//         player.pauseVideo();
+//         musicIcon.src = "assets/images/pause.png";
+//         isPlaying = false;
+//     }
+
+// });
+
+// document.addEventListener("touchstart", function(e){
+//   if (e.target.closest("#music-btn")) return;
+//   if(player && !isPlaying){
+//       player.playVideo();
+//       musicIcon.src = "assets/images/play.png";
+//       isPlaying = true;
+//   }
+// },{once:true});
+
+
+onYouTubeIframeAPIReady()
